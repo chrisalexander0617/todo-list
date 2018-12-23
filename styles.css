@@ -1,0 +1,99 @@
+* {
+  font-family: arial;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(149, 225, 226);
+  padding-top: 100px;
+}
+
+#container {
+  width: 360px;
+  margin: 0 auto;
+  box-shadow: 0 0 3px grey;
+  padding: 0px;
+  background-color: #efefef;
+}
+
+#container h1 {
+  background-color: #8293af;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  margin: 0px;
+}
+
+#container h1 i {
+  float: right;
+  margin-right:10px;
+}
+
+#container input {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  border: 3px solid rgba(0, 0, 0, 0);
+  margin: 0px;
+  background-color: #f7f7f7;
+}
+
+#container input:focus {
+  background-color: #fff;
+  border: 2px solid #8293af;
+  outline: none;
+}
+
+
+
+
+#container ul {
+  margin-top: 0px;
+  padding: 0px;
+}
+
+#container ::placeholder {
+  color: #d8d8d8;
+  opacity: 1;
+  /* Firefox */
+}
+#container span {
+  padding: 0px;
+  width:0;
+  margin-right:20px;
+  visibility: hidden;
+}
+#container li {
+  background-color: #fff;
+  width: 100%;
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+}
+/*Making every other li with a diferent background*/
+#container li:nth-child(2n) {
+  background-color: #f7f7f7;
+  width: 100%;
+  list-style: none;
+}
+#container li:hover span {
+  background-color:red;
+  height: 45px;
+  margin-right: 20px;
+  text-align: center;
+  color:white;
+  width:45px;
+  transition: .4s ease;
+  display: inline-block;
+  visibility: visible;
+}
+
+
+
+
+
+.completed {
+  color: gray;
+  text-decoration: line-through;
+}
